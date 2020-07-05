@@ -1,12 +1,10 @@
 var User = require("../model/userSchema");
 var Order = require("../model/orderSchema");
-// var Index =require('../model/indexSchema')
 require("../mongoose");
-// ;UsersOrder
 var mongoose = require("mongoose");
 
 module.exports = {
-    userCreate: async (req, res) => {
+    UserCreate: async (req, res) => {
         var recordUpdate = false;
 
         var getOrders = await Order.aggregate([{
