@@ -7,9 +7,8 @@ router.get('/', function(req, res, next) {
 });
  
 router.get('/getuserandorder', require("../api/getUserAndOrder").GetUserAndOrder);
-// router.post('/register', require("../api/register").Register);
 router.post('/ordercreate', require("../api/orderCreate").OrderCreate);
 router.post('/usersorders', require("../api/usersOrder").UsersOrder);
-router.post('/usercreate', require("../api/userCreate").userCreate);
+router.post('/usercreate', require("../api/userCreate").UserCreate);
 
 module.exports = router;  
